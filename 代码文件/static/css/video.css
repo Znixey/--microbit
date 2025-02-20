@@ -1,0 +1,68 @@
+*{
+    /* 初始化 */
+    margin: 0;
+    padding: 0;
+}
+body{
+    
+    /* 100%窗口高度 */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* 渐变背景 */
+    background: linear-gradient(200deg,hsl(208, 100%, 92%),#ebf2f4);
+    font-size:12px;
+    
+}
+input{
+    min-width: 60px;
+    width: 10%;  /*按钮大小自适应*/
+    height: 30px;
+    background: #9bbcf0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* 让子元素水平居中 */
+    border-color: rgb(107, 119, 211);
+    border-radius: 4px;
+    margin-inline-end: 10px;
+    font-size: clamp(0.7rem, 0.489rem + 1.05vw, 1.2rem);  /*文字大小自适应，最小0.7rem,最大1.2rem,否则取首选值*/
+    overflow: hidden;
+    border-radius: 16px; /* 将按钮的圆角设置为 8 像素 */
+    text-align: center;
+}
+button{
+    min-width: 60px;
+    width: 10%;  /*按钮大小自适应*/
+    height: 30px;
+    background: #9bbcf0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* 让子元素水平居中 */
+    border-color: rgb(107, 119, 211);
+    border-radius: 4px;
+    margin-inline-end: 10px;
+    font-size: clamp(0.7rem, 0.489rem + 1.05vw, 1.2rem);  /*文字大小自适应，最小0.7rem,最大1.2rem,否则取首选值*/
+    overflow: hidden;
+    border-radius: 16px; /* 将按钮的圆角设置为 8 像素 */
+    text-align: center;
+}
+/*input{
+    position:fixed;
+    left:100px;
+    top: 500px;
+    min-width: 100px;
+    width: 30%;  /*按钮大小自适应*
+    height: 60px;
+    background: #8fb5f1;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 4px;
+    margin-inline-end: 10px;
+    font-size: 0.3em;
+}

@@ -1,0 +1,58 @@
+*{
+    /* 初始化 */
+    margin: 0;
+    padding: 0;
+}
+@media screen and (max-width: 1024px) {
+    body {
+    font-size: 5px;
+    }
+    }
+    @media screen and (min-width: 1025px) and (max-width: 1366px) {
+    body {
+    font-size: 10px;
+    }
+    }
+    @media screen and (min-width: 1367px) {
+    body {
+    font-size: 15px;
+    }
+    }
+body{
+
+    /* 100%窗口高度 */
+    height: 100vh;
+    /* 弹性布局 水平+垂直居中 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 渐变背景 */
+    background: linear-gradient(200deg,hsl(208, 100%, 92%),#ebf2f4);
+    
+}
+h1{
+    position: absolute;
+    max-width: 100%;
+    display: inline-block;
+    text-align: left;
+    top: 100px;
+    color:rgb(128, 196, 235);
+    font-size: 5em;
+}
+input{
+    min-width: 100px;
+    width: 70%;  /*按钮大小自适应*/
+    height: 30px;
+    background: #9bbcf0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* 让子元素水平居中 */
+    border-color: rgb(107, 119, 211);
+    border-radius: 4px;
+    margin-inline-end: 10px;
+    font-size: clamp(0.7rem, 0.489rem + 1.05vw, 1.2rem);  /*文字大小自适应，最小0.7rem,最大1.2rem,否则取首选值*/
+    overflow: hidden;
+    border-radius: 16px; /* 将按钮的圆角设置为 8 像素 */
+    text-align: center;
+}
